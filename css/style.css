@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('opensans-bold-webfont.woff2') format('woff2'),
+         url('opensans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('opensans-semibold-webfont.woff2') format('woff2'),
+         url('opensans-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif; 
+   font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    max-width: 330px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.header-burger {
+    background-image: url(../image/icon/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+	padding:0;
+    margin: 15px 5px 15px 15px;
+    border: none;
+    background-color: #000;
+}
+
+.header-logo {
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.header-search {
+    background-image: url(../image/icon/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14.48px;
+    height: 14.8px;
+    cursor: pointer;
+	padding:0;
+    margin: 15px 15px 15px 5px;
+    border: none;
+    background-color: #000;
+    outline: none;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-door {
+    display: none;
+}
+
+.header-window {
+    display: none;
+}
+@media (min-width: 576px) {
+    .header {
+        max-width: 778px;
+    }
+    .header-burger {
+        width: 36px;
+        height: 28px;
+        margin: 36.7px 5px 35.3px 50px;
+    }
+    .header-logo {
+        margin-top: 29px;
+    }
+    .logo-img {
+        width: 187.6px;
+        height: 42px;
+    }
+    .header-search {
+        width: 26.66px;
+        height: 26.66px;
+        margin: 36.18px 49.55px 37.16px 5px;
+    }
+}
+@media (min-width: 768px) {
+    .header {
+        max-width: 1034px;
+    }
+}
+@media (min-width: 992px) {
+    .header-burger {
+        display: none;
+    }
+    .header-search {
+        display: none;
+    }
+    .header {
+        max-width: 1930px;
+    }
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        background-image: url(../image/header/birmingham-museums.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 1920px;
+        height: 800px;
+    }
+    .header-container {
+        width: 100%;
+    }
+    .header-window {
+        display: block;
+        width: 51px;
+        height: 100px;
+        opacity: 0;
+    }
+    .header-logo {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 109px;
+        margin-bottom: 30px;
+    }
+    .header-nav {
+        display: flex;
+        margin-top: 37px;
+    }
+    .header-list {
+        display: flex;
+        justify-content: center;
+    }
+    .header-item:not(:last-child) {
+        margin-right: 62px;
+    }
+    .header-link {
+        padding: 2px 6px 8px 6px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFF;
+    }
+    .header-link:focus {
+        outline: 2px solid #7943A4;
+    }
+    .header-link:hover {
+        color: #C283F3;
+    }
+    .header-link:active {
+        color: #7943A4;
+    }
+    .header-door {
+        display: flex;
+        position: relative;
+        max-height: 29px;
+        background-color: #000;
+        border: 0;
+        margin-top: 37px;
+        margin-right: 160px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff;
+    }
+    .header-door:focus {
+        outline: 2px solid #7943A4;
+    }
+    .header-door-icon {
+        background-image: url(../image/icon/vector.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 13px;
+        height: 13px;
+        margin-right: 7px;
+        margin-top: 6px;
+    }
+    .header-door:hover {
+        color: #C283F3;
+        
+    }
+   
+    
+}
