@@ -16,19 +16,34 @@
         <button aria-label="Меню" id="burger" class="header-burger">
           <span class="burger-line"></span>
         </button>
+          <div id="menu-burger" class="menu-burger">
+            <div id="burger-close" class="close">
+              <img src="image/icon/close.svg" alt="">
+            </div>
+              <ul class="header-list">
+                <li class="header-item"><a href="" class="header-link">О нас</a></li>
+                <li class="header-item"><a href="" class="header-link">Галерея</a></li>
+                <li class="header-item"><a href="" class="header-link">Каталог</a></li>
+                <li class="header-item"><a href="" class="header-link">События</a></li>
+                <li class="header-item"><a href="" class="header-link">Издания</a></li>
+                <li class="header-item"><a href="" class="header-link">Проекты</a></li>
+                <li class="header-item"><a href="" class="header-link">Контакты</a></li>
+              </ul>
+            <button class="header-door">Войти</button>
+          </div>
         <a class="header-logo">
           <img src="image/logo.svg" alt="Логотип" class="logo-img">
         </a>
         <button id="header-search" aria-label="Найти" class="header-search"></button>
-        <div id="menu-scan" class="header-scan">
-          <div id="scan-close" class="close">
-            <img src="image/icon/close.svg" alt="">
+          <div id="menu-scan" class="header-scan">
+            <button aria-label="Найти" class="scan-search"></button>
+            <form class="scan-form">
+              <input type="text" class="scan-input">
+            </form>
+            <div id="scan-close" class="close">
+              <img src="image/icon/close.svg" alt="">
+            </div>
           </div>
-          <form action="" class="scan-form">
-            <button aria-label="Найти" class="header-search"></button>
-            <input type="text" placeholder="__________________" class="scan-input">
-          </form>
-        </div>
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item"><a href="" class="header-link">О нас</a></li>
@@ -43,6 +58,7 @@
         <button class="header-door">Войти</button>
       </div>
       <img class="picture" src="image/header/birmingham-museums.png" alt="картина">
+      <img class="banner" src="image/header/banner.png" alt="банер">
     </div>
   </header>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
