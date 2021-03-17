@@ -12,4 +12,7 @@ $( document ).ready(function(){
     $('#burger-close').click(function(){
         $('#menu-burger').toggle('.is-active');
     });
+    $('#scan-search').click(function(){
+        $('#menu-scan').hide('.header-scan');
+    });
 });
