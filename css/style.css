@@ -44,9 +44,7 @@ img {
 }
 
 .header {
-    max-width: 330px;
-    padding-left: 5px;
-    padding-right: 5px;
+    /* max-width: 330px; */
     margin: 0 auto;
 }
 
@@ -79,19 +77,30 @@ img {
 
 .header-scan {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     position: absolute;
     z-index: 24;
-    bottom: 49px;
+    top: 0;
+    bottom: 0;
     left: 0;
-    max-width: 320px;
     width: 100%;
-    height: 75px;
+    height: 75px; 
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(40px);
     transition: transform .3s ease-in-out;
-    transform: translateY(101%);
+    transform: translateX(-101%);
+}
+
+.header-scan.is-activ {
+    transform: none;
+}
+
+.header-scan .close {
+    position: absolute;
+    bottom: 45px;
+    right: 15px;
+    margin: 0;
 }
 
 .header-search {
@@ -111,7 +120,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 19px;
-    width: 16px;
+    width: 17px;
     height: 16px;
     outline: none;
     border: 0;
@@ -147,9 +156,6 @@ img {
     outline: none;
 }
 
-.is-active { 
-    transform: none;
-}
 /* ---------------------- */
 .wrapper {
     /* display: flex; */
@@ -171,21 +177,27 @@ img {
     object-fit: cover;
 }
 /* ------------------------ */
+
 .menu-burger {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     align-items: flex-start;
-    bottom: 49px;
+    top: 0;
+    bottom: 0;
     left: 0;
-    max-width: 320px;
     width: 100%;
-    height: 355px;
+    height: 355px; 
     position: absolute;
     z-index: 25;
     background: rgba(0, 0, 0, 0.9);
     transition: transform .3s ease-in-out;
-    transform: translateY(101%);
+    transform: translateX(-101%);
 }
+.menu-burger.is-active { 
+    transform: none;
+}
+
+
 .menu-burger .close {
    align-self: flex-start;
    margin: 15px 0 16px 16px;
@@ -235,12 +247,12 @@ img {
 }
 @media (min-width: 576px) {
     .wrapper .banner,
-    .menu-burger {
+     {
         display: none;
     }
     
     .header {
-        max-width: 778px;
+        /* max-width: 778px; */
     }
     .header-burger {
         width: 36px;
@@ -269,8 +281,6 @@ img {
     }
 
     .menu-burger {
-        bottom: 108px;
-        max-width: 768px;
         height: 768px;
     }
     .close {
@@ -303,7 +313,7 @@ img {
     .header-scan {
         bottom: 100px;
         left: 0;
-        max-width: 768px;
+        /* max-width: 768px; */
         width: 100%;
         height: 100px;
         background: rgba(0, 0, 0, 1);
