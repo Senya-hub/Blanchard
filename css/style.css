@@ -228,7 +228,7 @@ ul {
 }
 
 .header-nav,
-.headet-bottom {
+.header-bottom {
     display: none;
 }
 .header-door {
@@ -377,15 +377,22 @@ ul {
     .wrapper {
         display: block;
         margin: 0 auto;
-        background-color: #000;
-        height: 170px;
+        /* background-color: #000; */
+        /* max-height: 170px; */
       /*   position: relative;
         overflow: hidden;*/
 
     }
-	.container {
-		max-width: 1603px;
-	}
+
+    .header-container {
+        background-color: #000;
+        margin: 0 auto;
+    }
+    .bottom-container {
+      background-color: rgba(0, 0, 0, 0.4);
+      margin: 0 auto;
+
+    }
     .wrapper .picture {
         display: flex;
         z-index: -1;
@@ -463,11 +470,10 @@ ul {
         background-image: url(../image/icon/vectora.svg);
         outline: none;
     }
-    .headet-bottom {
+    .header-bottom {
       display: flex;
+      justify-content: space-between;
       height: 70px;
-      background-color: rgba(0, 0, 0, 0.4);
-
     }
     .header-bottom-list {
       display: flex;
@@ -478,11 +484,18 @@ ul {
 
     }
     .bottom-item {
-      color: #000;
+      color: #fff;
     }
     .bottom-item:not(:last-child) {
       margin-right: 55px;
     }
+    .scan-form {
+      display: flex;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 21px;
+      max-width: 252px;
+  }
 
 }
 
@@ -495,9 +508,11 @@ ul {
     }
     .header-top {
       max-width: 1603px;
+      margin: 0 auto;
     }
-    .headet-bottom {
-      display: block;
+    .header-bottom {
+      max-width: 1603px;
+      margin: 0 auto;
     }
 
 
