@@ -12,6 +12,11 @@ window.addEventListener('DOMContentLoaded', function() {
      document.querySelector('#scan-close').addEventListener('click', function() {
         document.querySelector('#menu-scan').classList.toggle('is-activ')
      })
+	 
+	  const element = document.querySelector('-----------------------');
+	  const choices = new Choices(element, {
+	    searchEnabled: false
+	  });
 })
 
 $( document ).ready(function(){

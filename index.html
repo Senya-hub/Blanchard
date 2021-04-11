@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -63,15 +64,45 @@
       <div class="bottom-container">
         <div class="header-bottom">
           <ul class="header-bottom-list">
-            <li class="bottom-item">Реализм</li>
-            <li class="bottom-item">Импрессионизм</li>
-            <li class="bottom-item">Постимпрессионизм</li>
-            <li class="bottom-item">Авангард</li>
-            <li class="bottom-item">Футуризм</li>
+            <li class="bottom-item"><select class="select-realism">
+               <option>Реализм</option>
+			  <option>Тинторето</option>
+			  <option>Фридрих</option>
+			  <option>Леонардо</option>
+			  <option>Верроккьо</option>
+			</select></li>
+			<li class="bottom-item"><select id="select-realism">
+               <option>Импрессионизм</option>
+			  <option>Тинторето</option>
+			  <option>Фридрих</option>
+			  <option>Леонардо</option>
+			  <option>Верроккьо</option>
+			</select></li>
+			<li class="bottom-item"><select id="select-realism">
+               <option>Постимпрессионизм</option>
+			  <option>Тинторето</option>
+			  <option>Фридрих</option>
+			  <option>Леонардо</option>
+			  <option>Верроккьо</option>
+			</select></li>
+			<li class="bottom-item"><select id="select-realism">
+               <option>Авангард</option>
+			  <option>Тинторето</option>
+			  <option>Фридрих</option>
+			  <option>Леонардо</option>
+			  <option>Верроккьо</option>
+			</select></li>
+			<li class="bottom-item"><select id="select-realism">
+               <option>Футуризм</option>
+			  <option>Тинторето</option>
+			  <option>Фридрих</option>
+			  <option>Леонардо</option>
+			  <option>Верроккьо</option>
+			</select></li>
           </ul>
           <form class="scan-form">
             <button aria-label="Найти" class="scan-search bottom-search"></button>
-            <input type="text" class="scan-input">
+            <input type="text" value="Поиск по сайту" class="scan-input bottom-scan">
           </form>
         </div>
       </div>
@@ -87,6 +118,7 @@
   </header>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script/choices.min.js"></script>	c
 
   <script src="script/index.js"></script>
 </body>
